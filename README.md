@@ -6,7 +6,7 @@ This is the pytorch implementation of
 [**Yushi Hu**](https://yushi-hu.github.io/), Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, and Mari Ostendorf. 
 [[PDF]](https://arxiv.org/abs/2203.08568)
 
-Please cite with this bibtex:
+Please use the bibtex below:
 <pre>
 @article{hu2022context,
   title={In-Context Learning for Few-Shot Dialogue State Tracking},
@@ -18,7 +18,7 @@ Please cite with this bibtex:
 
 
 ## Model Overview
-<img align="right" src="plot/system-teaser.png" width="30%">
+<img align="right" src="plot/system-teaser.png" width="26%">
 
 The task is to track the slot values associated with a user request up to the current turn (dialogue state).
 
