@@ -74,7 +74,7 @@ python run_codex_experiment.py \
 ```
 Notice that this will generate a json file `expts/codex_5p_v2/running_log.json`. This files contains all the prompts and codex completion, and can be used in further analysis. We have put the sample running log there for analysis.
 
-To run the experiment with GPT-Neo 1.3B, use `run_gpt_neo_experiment.py` rather than `run_codex_experiment.py`. Everything else is the same.
+To run the experiment with GPT-Neo 2.7B, use `run_gpt_neo_experiment.py` rather than `run_codex_experiment.py`. To run with CodeGen-Mono 2.7B, use `run_codegen_experiment.py`. Everything else is the same.
 
 ### Analyze using the running log
 
