@@ -16,6 +16,15 @@ Please cite with this bibtex:
 }
 </pre>
 
+## Model Overview
+<p align="right">
+<img src="plot/system-teaser.pdf" width="50%" />
+</p>
+The task is to track the slot values associated with a user request up to the current turn (dialogue state).
+In few-shot settings,
+given a test turn (1), IC-DST first retrieves a few most similar turns from the labeled dialogues as examples (2). 
+The task schema (not shown in the figure), examples, and the test dialogue turn are concatenated in the prompt to a pretrained LM (3) to produce the current turn dialogue state changes as a SQL query (4).
+
 ## Environment
 Besides PyTorch and Huggingface transformers, install the other requirements by
 ```console
