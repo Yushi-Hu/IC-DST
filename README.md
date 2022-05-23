@@ -41,6 +41,9 @@ Set up CodeGen by
 Put your OpenAI API key in `config.py` to use Codex.
 Skip this step if you only want to run on GPT-Neo and CodeGen.
 
+## Quick Start
+A simple demo is in `demo.ipynb`, following the prompt example in the Appendix of the paper.
+
 ## Data
 We follow the pipeline of [MultiWoz 2.4 repo](https://github.com/smartyfh/MultiWOZ2.4/) for data preprocessing.
 We modified a bit to unify the ontology between MultiWOZ 2.1 and 2.4
