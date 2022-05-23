@@ -55,7 +55,7 @@ python sample.py --input_fn mwz2.1/train_dials.json --target_fn mw21_5p_train_v4
 ```
 
 
-## retriever
+## Retriever
 The trained retrievers are saved in `retriever/expts` folder. Each subfolder is a trained retriever.
 
 ### retriever quickstart
