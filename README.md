@@ -1,7 +1,9 @@
-# IC-DST: In-Context Learning for Dialogue State tracking
+# IC-DST: In-Context Learning for Dialogue State Tracking
 
 This is the pytorch implementation of
-**In-Context Learning for Dialogue State tracking**. [**Yushi Hu**](https://yushi-hu.github.io/), Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, and Mari Ostendorf. 
+**In-Context Learning for Dialogue State tracking**. 
+
+[**Yushi Hu**](https://yushi-hu.github.io/), Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, and Mari Ostendorf. 
 [[PDF]](https://arxiv.org/abs/2203.08568)
 
 Please cite with this bibtex:
@@ -31,7 +33,6 @@ Skip this step if you only want to run on GPT-Neo and CodeGen.
 We follow the pipeline of [MultiWoz 2.4 repo](https://github.com/smartyfh/MultiWOZ2.4/) for data preprocessing.
 We modified a bit to unify the ontology between MultiWOZ 2.1 and 2.4
 To download and create the dataset
-
 ```console
 cd data
 python create_data.py --main_dir mwz21 --mwz_ver 2.1 --target_path mwz2.1  # for MultiWOZ 2.1
@@ -43,7 +44,6 @@ Run the following script to sample and preprocess the few-shot and full-shot tra
 For few-shot experiments, the retriever is trained on the selection pool. So we have save the selection pool for each of the experiment.
 `data/sample.py` samples and processes the training sets.
 All the processed data will be saved in the `data` folder.
-
 ```console
 ./preprocess.sh
 ```
