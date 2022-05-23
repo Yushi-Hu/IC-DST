@@ -60,10 +60,10 @@ All the processed data will be saved in the `data` folder.
 ./preprocess.sh
 ```
 
-If you want to sample your own training set, follow the following example:
+If you want to sample your own training set, follow this example:
 to sample a 5% training set
 ```console
-python sample.py --input_fn mwz2.1/train_dials.json --target_fn mw21_5p_train_v4.json --ratio 0.05 --seed 0
+python sample.py --input_fn mwz2.1/train_dials.json --target_fn mw21_5p_train_seed0.json --ratio 0.05 --seed 0
 ```
 
 
