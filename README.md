@@ -71,8 +71,31 @@ python sample.py --input_fn mwz2.1/train_dials.json --target_fn mw21_5p_train_v4
 The trained retrievers are saved in `retriever/expts` folder. Each subfolder is a trained retriever.
 
 ### retriever quickstart
-If you want to skip the retriever finetuning etc. part, just download one of our retriever finetuned on 5% training set and try it!
+If you want to skip the retriever finetuning etc. part, 
+just download one of our retriever finetuned on 5% training set and try it.
 Download and unzip [https://drive.google.com/file/d/12iOXLyOxvVuepW7h8h7zNj1tdIVNU76F/view?usp=sharing](https://drive.google.com/file/d/12iOXLyOxvVuepW7h8h7zNj1tdIVNU76F/view?usp=sharing), put the folder in `retriever/expts`.
+
+### retriever details
+Embed all the utterances with SBERT (all-mpnet-base-v2) by
+```console
+cd retriever/
+python pretrained_embed_index.py
+```
+This will save all the embeddings in `retriever/expts/all_mpnet_base_v2`.
+
+To finetune SBERT with data in `../../data/mw21_5p_v2.json`, run
+```console
+python retriever_finetuning.py \
+--train_fn ../../data/mw21_5p_train_v2.json \
+--save_name 5p_test \
+--epoch 15 \
+--topk 10 \
+--toprange 200
+```
+This will save the embedding model and pre-embeded selection pool to `retriever/expts/5p_test)`.
+topk and toprange are hyperparameters for negative example sampling. Scale them with the selection pool size. For example, when using 1% training data, use topk=2, toprange=40; when using 5% training data, use topk=10, toprange=200.
+
+
 
 ## In-Context Learning Experiments
 
