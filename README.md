@@ -92,7 +92,8 @@ python retriever_finetuning.py \
 --topk 10 \
 --toprange 200
 ```
-This will save the embedding model and pre-embeded selection pool to `retriever/expts/5p_test)`.
+This will save the embedding model and pre-embeded selection pool to `retriever/expts/5p_test`.
+
 topk and toprange are hyperparameters for negative example sampling. Scale them with the selection pool size. For example, when using 1% training data, use topk=2, toprange=40; when using 5% training data, use topk=10, toprange=200.
 
 
