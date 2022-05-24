@@ -38,7 +38,7 @@ Set up CodeGen by
 ./install_codegen.sh
 ```
 
-Put your OpenAI API key in `config.py` to use Codex.
+Put your OpenAI API key in `config.py` to use Codex. (Codex is under private Beta now, you can easily request it on OpenAI's offical website and try it for free!)
 Skip this step if you only want to run on GPT-Neo and CodeGen.
 
 ## Quick Start
