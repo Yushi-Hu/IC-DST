@@ -35,12 +35,12 @@ Besides PyTorch and Huggingface transformers, install the other requirements by
 ```console
 pip install -r requirements.txt
 ```
-Set up CodeGen by
+(optional) Set up CodeGen by
 ```console
 ./install_codegen.sh
 ```
 
-Put your OpenAI API key in `config.py` to use Codex. (Codex is under private Beta now, you can easily request it on OpenAI's offical website and try it for free!)
+(optional) Put your OpenAI API key in `config.py` to use GPT-3. (Codex is under private Beta now, you can easily request it on OpenAI's offical website and try it for free!)
 Skip this step if you only want to run on GPT-Neo and CodeGen.
 
 ## Quick Start
