@@ -1,7 +1,7 @@
-# IC-DST: In-Context Learning for Dialogue State Tracking
+# IC-DST: In-Context Learning for Dialogue State Tracking with GPT-3
 
 This is the pytorch implementation of
-**In-Context Learning for Dialogue State tracking**. 
+**In-Context Learning for Few-Shot Dialogue State tracking**. 
 
 [**Yushi Hu**](https://yushi-hu.github.io/), Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, and Mari Ostendorf. 
 [[PDF]](https://arxiv.org/abs/2203.08568)
@@ -27,7 +27,7 @@ The task is to track the slot values associated with a user request up to the cu
 In few-shot settings,
 given a test turn, IC-DST first retrieves a few most similar turns from the labeled dialogues as examples. 
 The task schema (not shown in the figure), examples, 
-and the test dialogue turn are concatenated in the prompt to a pretrained LM (for this repo, we use GPT-Neo, CodeGen, or Codex) to produce the current turn dialogue state changes as a SQL query.
+and the test dialogue turn are concatenated in the prompt to a pretrained LM (for this repo, we use GPT-Neo, CodeGen, or GPT-3 Codex) to produce the current turn dialogue state changes as a SQL query.
 
 
 ## Environment
