@@ -6,6 +6,8 @@ This is the pytorch implementation of
 [**Yushi Hu**](https://yushi-hu.github.io/), Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, and Mari Ostendorf. 
 [[PDF]](https://arxiv.org/abs/2203.08568)
 
+Findings of EMNLP 2022. Long Paper
+
 Please use the bibtex below:
 <pre>
 @article{hu2022context,
