@@ -32,9 +32,9 @@ with open(ontology_path) as f:
 
 def eval(running_log, test_set, turn=-1, use_gold=False):
     # turn and use_gold are for analysis purpose
-    # turn = -1 means evalute all dialogues
+    # turn = -1 means evaluate all dialogues
     # turn = 0 means evaluate single-turn dialogues
-    # turn = 1 means evalute two-turn dialogues... etc.
+    # turn = 1 means evaluate two-turn dialogues... etc.
     # when use_gold = True, the context are gold context (for analysis purpose)
 
     result_dict = defaultdict(list)  # use to record the accuracy
